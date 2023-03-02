@@ -29,7 +29,15 @@ A soma dos números ímpares entre 15 e 12 é: 13
 
 
 def main():
-    pass  # your code here
+    a = int(input("Digite um valor inteiro para X: "))
+    b = int(input("Digite um valor inteiro para Y: "))
+    if a > b:
+      a, b = b, a
+    soma = 0
+    for i in range(a+1, b):
+           if i % 2 == 1:
+            soma = soma + i
+    print(f"A soma dos números ímpares entre {a} e {b} é: {soma}")
 
 
 if __name__ == '__main__':
